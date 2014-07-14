@@ -1,6 +1,13 @@
 <head>
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+
+<link href="../main.css" rel="stylesheet" type="text/css" />
+<link href="../code.css" rel="stylesheet" type="text/css" />
+<script src="../rainbow.min.js"></script>
+</head>
+
 <style type="text/css">
 .class_title {
 	font-size: x-large;
@@ -9,11 +16,6 @@
 	font-size: large;
 }
 </style>
-
-<link href="../main.css" rel="stylesheet" type="text/css" />
-<link href="../code.css" rel="stylesheet" type="text/css" />
-<script src="../rainbow.min.js"></script>
-</head>
 <body>
 <p class="class_title"><strong>WP8 payment SDK - Get Started</strong></p>
 
