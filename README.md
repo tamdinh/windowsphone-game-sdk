@@ -8,14 +8,7 @@
 <script src="../rainbow.min.js"></script>
 </head>
 
-<style type="text/css">
-.class_title {
-	font-size: x-large;
-}
-.auto-style1 {
-	font-size: large;
-}
-</style>
+
 <body>
 <p class="class_title"><strong>WP8 payment SDK - Get Started</strong></p>
 
