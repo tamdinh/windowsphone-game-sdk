@@ -1,8 +1,6 @@
 <head>
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title> WP8 payment SDK - Get Started </title>
-
 <style type="text/css">
 .class_title {
 	font-size: x-large;
@@ -17,6 +15,8 @@
 <script src="../rainbow.min.js"></script>
 </head>
 <body>
+<p class="class_title"><strong>WP8 payment SDK - Get Started</strong></p>
+
 
 <p class="class_title"><strong>Get Started</strong></p>
 <p>Appota Payment SDK cho Windows Phone là cách đơn giản nhất để tích hợp thanh toán cho ứng dụng của bạn trên hệ thống Appota. SDK này cung cấp giải pháp cho các hình thức thanh toán: SMS, thẻ cào, internet banking và paypal Payment.</p>
