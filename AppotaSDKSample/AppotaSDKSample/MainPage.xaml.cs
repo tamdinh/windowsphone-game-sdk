@@ -7,20 +7,19 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
-using AppotaSDKSample.Resources;
+
 using APTCallback;
 using APTPaymentService;
+using APTPaymentResult;
 
 namespace AppotaSDKSample
 {
     public partial class MainPage : PhoneApplicationPage, AppotaSDKCallback
     {
         AppotaGameSDK gameSDK;
-        // Constructor
         public MainPage()
         {
             InitializeComponent();
-
             gameSDK = new AppotaGameSDK(this);
         }
 
@@ -44,40 +43,53 @@ namespace AppotaSDKSample
             gameSDK.ShowUserInfo();
         }
 
-
         private void btnLogoutAccount_Click(object sender, RoutedEventArgs e)
         {
             gameSDK.LogoutAccount();
         }
-      
-        public void onPaymentError(string message)
+
+        #region SDK CALLBACK
+
+        public void OnLogoutAccountSuccess()
         {
             //throw new NotImplementedException();
         }
 
-        public void onPaymentSuccess(APTPaymentResult.TransactionResult result)
+        public void OnPaymentError(string message)
         {
-           // throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
-        public void onUserLoginError(string message)
+        public void OnPaymentSuccess(TransactionResult result)
         {
-           // throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
-        public void onUserLoginSuccess(APTPaymentResult.UserLoginResult result)
+        public void OnSwitchAccountSuccess(UserLoginResult result)
         {
-           // throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
-        public void onUserRegisterError(string message)
+        public void OnUserLoginError(string message)
         {
-           // throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
-        public void onUserRegisterSuccess(APTPaymentResult.UserLoginResult result)
+        public void OnUserLoginSuccess(UserLoginResult result)
         {
-          //  throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
+
+        public void OnUserRegisterError(string message)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public void OnUserRegisterSuccess(UserLoginResult result)
+        {
+            //throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }
